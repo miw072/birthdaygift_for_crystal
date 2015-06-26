@@ -19,16 +19,26 @@
     <div id="wrap">
         <div id="text">
             <div id="code">
-                <span class="say">我们去学校写代码吧 </span><br />
-                <span class="say"> </span><br />
-                <span class="say">你住附近？</span><br />
-                <span class="say">对，就在前面...</span><br />
-                <span class="say">我送你回去，刚好顺路.</span><br />
-                <span class="say">谢谢啊~</span><br />
-                <span class="say">...</span><br/><br/><br/>
-                <span class="say">谢谢你走进我的世界，也让我走入你的世界。</span><br/>
-
-                <span class="say"><span class="space"></span> -- Yours, Fireleg.</span>
+                <span class="comments">/**</span><br />
+                <span class="space"/><span class="comments">* July 5th will be your birthday,</span><br />
+                <span class="space"/><span class="comments">* so I write some code to wish you happy birthday.</span><br />
+                <span class="space"/><span class="comments">*/</span><br />
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"Fireleg"</span>);<br />
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"Crystal"</span>);<br />
+                <span class="comments">// March 6, 2015, I told you I love you. </span><br />
+                i.love(u);<br />
+                <span class="comments">// Luckily, you accepted and became my </span><br />
+                <span class="comments">// girlfriend ever since.</span><br />
+                u.accepted();<br />
+                <span class="comments">// Since then, I miss u every day.</span><br />
+                i.miss(u);<br />
+                <span class="comments">// And we take care of each other.</span><br />
+                i.takeCareOf(u);<br />
+                u.takeCareOf(me);<br />
+                <span class="comments">// Today I want to wish you </span><br />
+                <span class="comments">// Happy Birthday!~ </span><br />
+                i.happyBirthdayTo(u);<br />
+                <span class="say"><span class="bigspace"></span> //-- Yours, Fireleg.</span>
             </div>
         </div>
         <div id="clock-box">
@@ -37,7 +47,7 @@
         </div>
         <canvas id="canvas"></canvas>
     </div>
-    <audio src="love.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio src="sugar.mp3" autoplay="autoplay" loop="loop"></audio>
 </div>
 </body>
 <script>
