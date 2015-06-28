@@ -93,7 +93,7 @@
                 ]]
             ],
             bloom: {
-                num: 700,
+                num: 800,
                 width: 1080,
                 height: 650
             },
@@ -129,7 +129,7 @@
         var seedAnimate = eval(Jscex.compile("async", function () {
             seed.draw();
             while (hold) {
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(30));
             }
             while (seed.canScale()) {
                 seed.scale(0.95);
@@ -145,14 +145,14 @@
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
                 tree.grow();
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(20));
             } while (tree.canGrow());
         }));
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
                 tree.flower(2);
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(20));
             } while (tree.canFlower());
         }));
 
